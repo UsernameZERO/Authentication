@@ -2,10 +2,12 @@
   <head>
     <title><%= title%></title>
 
+    <!-- noty in css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css"
     />
+    <!-- noty in js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
 
     <link rel="stylesheet" href="/css/layout.css" />
@@ -14,15 +16,18 @@
     <link rel="stylesheet" href="/css/profile.css" />
     <link rel="stylesheet" href="/css/signup.css" />
     <%- style%>
+    <!-- fontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <!-- Recaptcha -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <%- include('_header')%> <%- body %> <%- script%>
     <script>
+      // For displaying flash messages
       <% if(flash.success && flash.success.length > 0){%>
         new Noty({
           theme: 'metroui',

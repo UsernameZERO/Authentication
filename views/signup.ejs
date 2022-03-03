@@ -1,4 +1,5 @@
 <div id="sign-up">
+  <!-- Sign up form -->
   <form id="signup" action="/create" method="post">
     <p>TO REGISTER FILL IN THE DETAILS</p>
     <div class="box">
@@ -19,14 +20,20 @@
         <input type="password" name="c_password" id="cpws" required />
       </div>
     </div>
+
+    <!-- Captcha checking -->
     <div
       class="g-recaptcha"
       data-sitekey="6LctV7AeAAAAAB6drHUuMlXKJMl66oq7XKDakKww"
     ></div>
+    <!-- submit -->
     <button id="btn-signup" type="submit">Sign up</button>
   </form>
+
   <div class="links">
+    <!-- To go to sign in page -->
     <p><a href="/">Sign In</a></p>
+    <!-- google sign in -->
     <p>
       <a href="/auth/google"><i class="fa-brands fa-google"></i> Sign Up</a>
     </p>
