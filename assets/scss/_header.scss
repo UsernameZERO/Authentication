@@ -1,0 +1,18 @@
+.heading{
+    background-color: rgb(103, 103, 184);
+    display: flex;
+    justify-content: space-between;
+    h1{
+        padding-left: 2rem;
+    }
+    h2{
+        padding-right: 3rem;
+        a{
+            text-decoration: none;
+            color: rgb(136, 31, 31);
+        }
+        a:hover{
+            color: rgb(0, 255, 0);
+        }
+    }
+}

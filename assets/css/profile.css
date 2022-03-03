@@ -1,0 +1,32 @@
+#prof h1 {
+  text-transform: capitalize;
+  text-align: center; }
+
+#prof details summary {
+  list-style: none;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+#prof details summary:hover {
+  color: red; }
+
+#prof details #Updt-pwd {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #prof details #Updt-pwd label {
+    margin-top: 0.2rem;
+    color: blue; }
+  #prof details #Updt-pwd input {
+    border-radius: 9px;
+    border: 2px solid black;
+    padding: 0.2rem; }
+  #prof details #Updt-pwd #s-rp {
+    margin-top: 0.2rem;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer; }

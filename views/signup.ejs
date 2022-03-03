@@ -1,0 +1,34 @@
+<div id="sign-up">
+  <form id="signup" action="/create" method="post">
+    <p>TO REGISTER FILL IN THE DETAILS</p>
+    <div class="box">
+      <div class="fieldd">
+        <label for="userN"> Email</label>
+        <input type="email" name="email" id="userN" required />
+      </div>
+      <div class="fieldd">
+        <label for="N">Name</label>
+        <input type="text" name="name" id="N" required />
+      </div>
+      <div class="fieldd">
+        <label for="pwd">Password</label>
+        <input type="password" name="password" id="pws" required />
+      </div>
+      <div class="fieldd">
+        <label for="cpwd">Confirm Password</label>
+        <input type="password" name="c_password" id="cpws" required />
+      </div>
+    </div>
+    <div
+      class="g-recaptcha"
+      data-sitekey="6LctV7AeAAAAAB6drHUuMlXKJMl66oq7XKDakKww"
+    ></div>
+    <button id="btn-signup" type="submit">Sign up</button>
+  </form>
+  <div class="links">
+    <p><a href="/">Sign In</a></p>
+    <p>
+      <a href="/auth/google"><i class="fa-brands fa-google"></i> Sign Up</a>
+    </p>
+  </div>
+</div>

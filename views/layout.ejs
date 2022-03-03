@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title><%= title%></title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/_header.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/profile.css" />
+    <link rel="stylesheet" href="/css/signup.css" />
+    <%- style%>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <%- include('_header')%> <%- body %> <%- script%>
+    <script>
+      <% if(flash.success && flash.success.length > 0){%>
+        new Noty({
+          theme: 'metroui',
+          text: '<%= flash.success%>',
+          type: 'success',
+          layout: 'centerLeft',
+          timeout: 1500,
+        }).show();
+      <%}%>
+      <% if(flash.error && flash.error.length > 0){%>
+        new Noty({
+          theme: 'light',
+          text: '<%= flash.error%>',
+          type: 'error',
+          layout: 'centerLeft',
+          timeout: 1500,
+        }).show();
+      <%}%>
+    </script>
+  </body>
+</html>

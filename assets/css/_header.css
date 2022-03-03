@@ -1,0 +1,13 @@
+.heading {
+  background-color: #6767b8;
+  display: flex;
+  justify-content: space-between; }
+  .heading h1 {
+    padding-left: 2rem; }
+  .heading h2 {
+    padding-right: 3rem; }
+    .heading h2 a {
+      text-decoration: none;
+      color: #881f1f; }
+    .heading h2 a:hover {
+      color: lime; }

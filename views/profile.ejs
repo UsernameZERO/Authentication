@@ -1,0 +1,16 @@
+<div id="prof">
+  <h1>Welcome <%= user.name%></h1>
+
+  <details>
+    <summary>reset password</summary>
+    <form id="Updt-pwd" action="/update-password/<%=user._id%>" method="post">
+      <label for="op">Old Password</label>
+      <input type="password" id="op" name="password" required />
+      <label for="np">New Password</label>
+      <input type="password" id="np" name="n_password" />
+      <label for="cp">Confirm Password</label>
+      <input type="password" name="c_password" id="cp" />
+      <button type="submit" id="s-rp">Reset</button>
+    </form>
+  </details>
+</div>
